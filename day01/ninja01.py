@@ -28,6 +28,8 @@ print('Hello', 'world')  # read instruction above and write this code
 ## Take your name as input and output the following line:
 ##   Hello <NAME>. Welcome to the world of python.
 
+NAME = input('please input your name: ')
+print('Hello', NAME, ', Welcome to the world of python.')
 
 
 ################################################################################
@@ -40,6 +42,11 @@ print('Hello', 'world')  # read instruction above and write this code
 ##   5. If you deposit $7500 in a bank with annual interest rate of 5%, how much
 ##      you can get after 5 years.
 
+print('(1+2)*3/4-5/(6+7)*8-9 = ', (1+2)*3/4-5/(6+7)*8-9)
+print('2**5 =', 2**5)
+print(1/6)
+print((10+15)*2)
+print(7500*(1+0.05)**5)
 
 
 ################################################################################
@@ -54,7 +61,14 @@ print('Hello', 'world')  # read instruction above and write this code
 ##   7. 15 ^ 9 = ?
 ##   8. 9 | 10 | (11 & 12) = ?
 
-
+print(5<<3)
+print(5*(2**3))
+print(1024>>3)
+print(1024/(2**3))
+print(15 | 9)
+print(15 & 9)
+print(15 ^ 9)
+print(9 | 10 | (11 & 12))
 
 ################################################################################
 ## 4 More input and output
@@ -65,6 +79,13 @@ print('Hello', 'world')  # read instruction above and write this code
 ##   I'm a <GENDER>
 ##   I work at <COMPANY> as a <TITLE>
 
+name = input('please input your name: ')
+gender = input('please input your gender: ')
+company = input('please input your company: ')
+title = input('please input your title: ')
+print('''I\'m %s,
+I\'m a %s,
+I work at %s as a %s'''% (name, gender, company, title))
 
 
 ################################################################################
