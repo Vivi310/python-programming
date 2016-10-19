@@ -26,6 +26,15 @@
 ##    5. Peach, Grape,Plum
 ##    6. Plum, Lemon, Pear
 
+fruits = ['Apple', 'Banana', 'Peach', 'Grape', 'Plum', 'Lemon', 'Pear']
+print(fruits[0])
+print(fruits[1])
+print(fruits[-1])
+print(fruits[0:3])
+print(fruits[2:5])
+print(fruits[-3:])
+
+
 ################################################################################
 ## 2 List2
 ## Take the following information as inputs:
@@ -39,6 +48,17 @@
 ##    2. Python
 ##    3. Jack
 
+
+L = [
+    ['facebook', 'linkedin', 'amazon', 'google'],
+    ['Java','Python', 'Php'],
+    ['Bob','Tom','Jack']
+    ]
+print(L[0][0])
+print(L[1][1])
+print(L[2][2])
+
+
 ################################################################################
 ## 3 Tuple1
 ## Take the following information as inputs:
@@ -48,6 +68,12 @@
 ##    2. Bob
 ##    3. Jack,Tom
 ##v   4. Tom,Bob
+
+classmates = ('Michael', 'Jack', 'Tom', 'Bob')
+print(classmates[0])
+print(classmates[-1])
+print(classmates[1:3])
+print(classmates[-2:])
 
 ################################################################################
 ## 4 Tuple2
@@ -60,6 +86,14 @@
 ##    4. Tom,Bob
 ## How to change 'Tom' to 'Jason', the classmates output:
 ##    classmates = ('Michael', 'Jack', ['Jason', 'Bob'])
+
+classmates = ('Michael', 'Jack', ['Tom', 'Bob'])
+print(classmates[1])
+print(classmates[2][0])
+print(classmates[2][1])
+print(classmates[2])
+classmates[2][0] = 'Jason'
+print(classmates)
 
 ################################################################################
 ## 5 Find more built-in functions
@@ -89,4 +123,14 @@
 ##   3. Print sorted list of [12, 0, -5, -7, 11, 21, 55, -28]
 ##   4. Print max/min value of [12, 0, -5, -7, 11, 21, 55, -28]
 ##   5. Print length of list [12, 0, -5, -7, 11, 21, 55, -28]
+
+list1 = [True, False, True, True, False]
+print(all(list1))
+
+list2 = [12, 0, -5, -7, 11, 21, 55, -28]
+print(sum(list2))
+print(sorted(list2))
+print(max(list2))
+print(min(list2))
+print(len(list2))
 

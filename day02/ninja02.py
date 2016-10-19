@@ -63,6 +63,17 @@ print(not (75-5>100) or (2**4+4 == 20) and (-2 >= 0)) # True
 ##          if income >= 1600, rate = 0.3
 ## Fill in the lines
 
+income = 1870
+if 0<income<800:
+    rate = 0.1
+elif 800<=income<1600:
+    rate = 0.2
+else:
+    rate = 0.3
+tax = income*rate
+print('your income is %s, your tax is %s'%(income, tax))
+
+
 income = 1450
 rate = 0
 if 0<income<800:
@@ -95,6 +106,14 @@ print('Your income is %s, your tax is %s'%(income, tax))
 
 x = 2
 x += 5
+x -= 5
+x *= 16
+x /= 16
+x **= 5
+x |= 5
+x &= 4
+x ^= 7
+x %= 2
 
 ################################################################################
 ## 4 Find more built-in functions
@@ -120,6 +139,23 @@ x += 5
 ##   4. Find absolute value of -7, 0, 13
 ##   5. Find max/min value among 13, 22, -5, 73, 0, 3, -17
 
+a = 123
+print(float(a))
+print(string(a))
+print(bool(a))
+
+b = 1.234567e3
+print(int(b))
+
+x = 0o123
+y = 0*123
+
+c = [-7, 0, 13]
+print(abs(c))
+
+d = [13, 22, -5, 73, 0, 3, -17]
+print(max(d))
+print(min(d))
 
 
 ################################################################################
@@ -131,6 +167,15 @@ x += 5
 ## If n is even and greater than 20, print Not Weird
 
 n = 19
+if n/2 == 0:
+    print('Wired')
+elif (n/2 == 1) & (2 < n <5):
+    print('Not Weird')
+elif (n/2 == 1) & (6 < n <20):
+    print('Weird')
+else (n/2 == 1) & (n > 20):
+    print('Not Weird')
+
 
 ################################################################################
 ## 6 Format string
@@ -153,3 +198,17 @@ print(s)
 ##      of numbers, use %s for all of them is most simple way, just try:
 ##      'int: %s  float: %s  string: %s  bool: %s  none: %s'%(
 ##      123, 123.001, 'apple', True, None)
+
+MM = 2
+DD = 7
+YYYY = 2016
+P = 'Today is %2d/%2d/%4d'%(MM, DD, YYYY)
+print(P)
+
+HH = 21
+mm = 8
+ss = 13
+D = 'The time is %2d:%2d:%2d'%(HH, mm, ss)
+print(D)
+
+H = 'int: %s float: %s string: %s bool: %s none: %s'%(123, 123.001, 'apple', True, None)
