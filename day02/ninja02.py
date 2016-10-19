@@ -104,16 +104,17 @@ print('Your income is %s, your tax is %s'%(income, tax))
 ##   9. x = x % 2  # div mod operation
 ## Feel free to print each intermediate result after each computation.
 
-x = 2
-x += 5
-x -= 5
-x *= 16
-x /= 16
-x **= 5
-x |= 5
-x &= 4
-x ^= 7
-x %= 2
+
+#print(x += 2)
+#x += 5
+#x -= 5
+#x *= 16
+#x /= 16
+#x **= 5
+# x |= 5
+#x &= 4
+#x ^= 7
+#x %= 2
 
 ################################################################################
 ## 4 Find more built-in functions
@@ -140,20 +141,22 @@ x %= 2
 ##   5. Find max/min value among 13, 22, -5, 73, 0, 3, -17
 
 a = 123
-print(float(a))
-print(string(a))
-print(bool(a))
+print('a = ', float(a), type(float(a)))
+print('a = ', str(a), type(str(a)))
+print('a = ', bool(a), type(bool(a)))
 
 b = 1.234567e3
-print(int(b))
+print('b = ', int(b), type(int(b)))
 
-x = 0o123
-y = 0*123
+c = 123
+print(bin(c))
+print(oct(123))
+print(hex(123))
 
-c = [-7, 0, 13]
+d = (-7, 0, 13)
 print(abs(c))
 
-d = [13, 22, -5, 73, 0, 3, -17]
+e = [13, 22, -5, 73, 0, 3, -17]
 print(max(d))
 print(min(d))
 
@@ -167,14 +170,14 @@ print(min(d))
 ## If n is even and greater than 20, print Not Weird
 
 n = 19
-if n/2 == 0:
-    print('Wired')
-elif (n/2 == 1) & (2 < n <5):
-    print('Not Weird')
-elif (n/2 == 1) & (6 < n <20):
-    print('Weird')
-else (n/2 == 1) & (n > 20):
-    print('Not Weird')
+#if n/2 == 0:
+#    print('Wired')
+#elif (n/2 == 1) & (2 < n <5):
+#    print('Not Weird')
+#elif (n/2 == 1) & (6 < n <20):
+#     print('Weird')
+#else (n/2 == 1) & (n > 20):
+#    print('Not Weird')
 
 
 ################################################################################
@@ -188,6 +191,7 @@ salary = 8500.14
 s = 'I\'m %s. I am %d years old. I live in %s, and earn %f each month.'%(
 name, age, city, salary)
 print(s)
+
 ## This gives you the following line
 ##   I'm david, I am 20 years old. I live in Seattle, and earn 8500.14 each month
 ##
@@ -202,13 +206,13 @@ print(s)
 MM = 2
 DD = 7
 YYYY = 2016
-P = 'Today is %2d/%2d/%4d'%(MM, DD, YYYY)
+P = 'Today is %02d/%02d/%04d'%(MM, DD, YYYY)
 print(P)
 
 HH = 21
 mm = 8
 ss = 13
-D = 'The time is %2d:%2d:%2d'%(HH, mm, ss)
+D = 'The time is %02d:%02d:%02d'%(HH, mm, ss)
 print(D)
 
 H = 'int: %s float: %s string: %s bool: %s none: %s'%(123, 123.001, 'apple', True, None)
