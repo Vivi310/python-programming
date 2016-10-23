@@ -64,6 +64,7 @@ print(not (75-5>100) or (2**4+4 == 20) and (-2 >= 0)) # True
 ## Fill in the lines
 
 income = 1870
+rate = 0
 if 0<income<800:
     rate = 0.1
 elif 800<=income<1600:
@@ -104,17 +105,16 @@ print('Your income is %s, your tax is %s'%(income, tax))
 ##   9. x = x % 2  # div mod operation
 ## Feel free to print each intermediate result after each computation.
 
-
-#print(x += 2)
-#x += 5
-#x -= 5
-#x *= 16
-#x /= 16
-#x **= 5
-# x |= 5
-#x &= 4
-#x ^= 7
-#x %= 2
+x = 2
+x += 5
+x -= 5
+x *= 16
+x /= 16
+x **= 5
+x |= 5
+x &= 4
+x ^= 7
+x %= 2
 
 ################################################################################
 ## 4 Find more built-in functions
@@ -141,9 +141,12 @@ print('Your income is %s, your tax is %s'%(income, tax))
 ##   5. Find max/min value among 13, 22, -5, 73, 0, 3, -17
 
 a = 123
-print('a = ', float(a), type(float(a)))
-print('a = ', str(a), type(str(a)))
-print('a = ', bool(a), type(bool(a)))
+float(a) = x
+print('a = ', float(a), type(x))
+str(a) = y
+print('a = ', str(a), type(y))
+bool(a) = z
+print('a = ', bool(a), type(z))
 
 b = 1.234567e3
 print('b = ', int(b), type(int(b)))

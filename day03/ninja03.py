@@ -75,6 +75,7 @@ print(classmates[-1])
 print(classmates[1:3])
 print(classmates[-2:])
 
+
 ################################################################################
 ## 4 Tuple2
 ## Take the following information as inputs:
@@ -94,6 +95,7 @@ print(classmates[2][1])
 print(classmates[2])
 classmates[2][0] = 'Jason'
 print(classmates)
+
 
 ################################################################################
 ## 5 Find more built-in functions
@@ -134,3 +136,8 @@ print(max(list2))
 print(min(list2))
 print(len(list2))
 
+
+
+l1 =[1,2,3,4,5,6,7,8,9,10]
+print('sum = %d'%(sum(l1)))
+s = 0
