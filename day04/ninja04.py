@@ -36,11 +36,45 @@
 ##    8. output the min element of value_list
 ##        min_value = 1
 
+vl = [1,2,3,4,5,6,7,8]
+print('length = %d'%(len(vl)))
+
+print(vl)
+
+for n in vl:
+    if n%2 == 0:
+        print(n)
+
+for m in vl:
+    if m%2 ==1:
+        print(m)
+
+#print('reversed = %d'%(reversed(vl)))
+
+
+print('sum = %d'%(sum(vl)))
+
+print('max = %d'%(max(vl)))
+
+print('min = %d'%(min(vl)))
+
+
 #################################################################################
 ## 2 List comprehension exercise 2
 ##    data = "123,,456,789,,,,34,,,,12"
 ##Output the following format:
 ##    1. result = [123,456,789,34,12]
+
+data = "123,,456,789,,,,34,,,,12"
+data = int(data)
+print('data = ', split',')
+
+
+
+
+
+
+
 
 #################################################################################
 ## 3 exercise 3
@@ -57,6 +91,24 @@
 ##    5. reverse elements in list(use reverse() function)
 ##       data = [10, 8, 7, 6, 5, 4, 3, 2, 1]
 
+
+data = [1,3,2,5,4,8,6,7]
+data.append(9)
+
+
+data.insert(2, 10)
+print(data)
+
+data.pop()
+print(data)
+
+data.sort()
+print(data)
+
+data.reverse()
+print(data)
+
+
 ##################################################################################
 ## 4 exercise 4
 ## use 'while' statement to calculate the sum from 1 to 100
@@ -68,6 +120,18 @@
 ##    print(sum)
 ## output:
 ##    sum = 5050
+
+n = 100
+sum = 0
+counter = 1
+while n > 0:
+    sum = sum + n
+    n =n - 1
+print(sum)
+
+
+
+
 
 ##################################################################################
 ## 5 exercise 5
@@ -84,6 +148,21 @@
 ##    for example : 2000 is leap year.
 ##                  2011 is not leap year
 
+year = int(input('please enter the year: '))
+if year%4 == 0:
+    if year%100 == 0:
+        if year%400 == 0:
+            print('%04d is leap year.'%(year))
+        else:
+            print('%04d is not leap year.'%(year))
+    else:
+        print('%04d is leap year.'%(year))
+else:
+    print('%04d is not leap year.'%(year))
+
+
+
+
 ###################################################################################
 ## 6 exercise 6
 ## Please find prime number from list
@@ -92,6 +171,14 @@
 ## output:
 ##    result = [2,3,5,7,11,13,17,19]
 
+data = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+for x in data:
+    if x%2 == 0 and x>=2:
+        if x%3 == 0 and x>=3:
+            if x%5 == 0 and x>=5:
+                if x%7 == 0 and x>=7:
+                    print(x)
 
 
 
