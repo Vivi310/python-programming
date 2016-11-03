@@ -46,7 +46,7 @@ for n in vl:
         print(n)
 
 for m in vl:
-    if m%2 ==1:
+    if m%2 == 1:
         print(m)
 
 #print('reversed = %d'%(reversed(vl)))
@@ -179,6 +179,5 @@ for x in data:
             if x%5 == 0 and x>=5:
                 if x%7 == 0 and x>=7:
                     print(x)
-
 
 
