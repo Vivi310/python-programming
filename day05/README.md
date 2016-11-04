@@ -13,8 +13,12 @@
 
 ## Understand how data are stored
 
+<<<<<<< HEAD
 ## Dead loop
 
 ## File read/write
 
 ## with
+=======
+## Dead loop
+>>>>>>> upstream/master

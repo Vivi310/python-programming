@@ -36,6 +36,7 @@
 ##    8. output the min element of value_list
 ##        min_value = 1
 
+<<<<<<< HEAD
 vl = [1,2,3,4,5,6,7,8]
 print('length = %d'%(len(vl)))
 
@@ -59,12 +60,15 @@ print('max = %d'%(max(vl)))
 print('min = %d'%(min(vl)))
 
 
+=======
+>>>>>>> upstream/master
 #################################################################################
 ## 2 List comprehension exercise 2
 ##    data = "123,,456,789,,,,34,,,,12"
 ##Output the following format:
 ##    1. result = [123,456,789,34,12]
 
+<<<<<<< HEAD
 data = "123,,456,789,,,,34,,,,12"
 data = int(data)
 print('data = ', split',')
@@ -76,6 +80,8 @@ print('data = ', split',')
 
 
 
+=======
+>>>>>>> upstream/master
 #################################################################################
 ## 3 exercise 3
 ##    data = [1,3,2,5,4,8,6,7]
@@ -91,6 +97,7 @@ print('data = ', split',')
 ##    5. reverse elements in list(use reverse() function)
 ##       data = [10, 8, 7, 6, 5, 4, 3, 2, 1]
 
+<<<<<<< HEAD
 
 data = [1,3,2,5,4,8,6,7]
 data.append(9)
@@ -109,6 +116,8 @@ data.reverse()
 print(data)
 
 
+=======
+>>>>>>> upstream/master
 ##################################################################################
 ## 4 exercise 4
 ## use 'while' statement to calculate the sum from 1 to 100
@@ -121,6 +130,7 @@ print(data)
 ## output:
 ##    sum = 5050
 
+<<<<<<< HEAD
 n = 100
 sum = 0
 counter = 1
@@ -133,6 +143,8 @@ print(sum)
 
 
 
+=======
+>>>>>>> upstream/master
 ##################################################################################
 ## 5 exercise 5
 ## Please judge the year that you input is leap year
@@ -148,21 +160,8 @@ print(sum)
 ##    for example : 2000 is leap year.
 ##                  2011 is not leap year
 
-year = int(input('please enter the year: '))
-if year%4 == 0:
-    if year%100 == 0:
-        if year%400 == 0:
-            print('%04d is leap year.'%(year))
-        else:
-            print('%04d is not leap year.'%(year))
-    else:
-        print('%04d is leap year.'%(year))
-else:
-    print('%04d is not leap year.'%(year))
 
-
-
-
+>>>>>>> upstream/master
 ###################################################################################
 ## 6 exercise 6
 ## Please find prime number from list
@@ -171,13 +170,8 @@ else:
 ## output:
 ##    result = [2,3,5,7,11,13,17,19]
 
-data = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
-for x in data:
-    if x%2 == 0 and x>=2:
-        if x%3 == 0 and x>=3:
-            if x%5 == 0 and x>=5:
-                if x%7 == 0 and x>=7:
-                    print(x)
+
+>>>>>>> upstream/master
 
 
